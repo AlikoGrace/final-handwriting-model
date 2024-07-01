@@ -70,7 +70,7 @@ def upload_file():
                     risk = 'Not at risk of dyslexia'
 
                 session.pop('predictions', None)  # Clear the session
-                return jsonify({"Model Prediction": risk})
+                return jsonify({"Model_Prediction": risk})
             else:
                 return jsonify({"message": "Image processed, please upload more images", "uploaded_images": len(session['predictions'])})
             
